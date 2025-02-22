@@ -21,7 +21,7 @@
             <blockquote>Did you know that UNIX was developed by Bell Systems for internal use?</blockquote>
             <h3>UNIX in today's world</h3>
             <p>A lot of modern OSes have begins that start with UNIX.</p>
-            <dl><dt>Linux</dt><dd>Name stems from a portmanteau of “Linus + Unix". Release on September 17, 1991 as a open-soruce UNIX clone by Linus Torvalds.</dd></dl>
+            <dl><dt>Linux</dt><dd>Name stems from a portmanteau of “Linus" + "Unix". Release on September 17, 1991 as a open-soruce UNIX clone by Linus Torvalds.</dd></dl>
             <dl><dt>macOS</dt><dd>macOS is based of NeXTSTEP (which apple purchaced in 1999), which in itself is based of <a href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution">BSD UNIX</a>.</dd></dl>
             <dl><dt>Microsoft Windows</dt><dd>While not based off UNIX, Windows does share a lot in common with UNIX.</dd></dl>
             <dl><dt>IBM z/OS</dt><dd>IBM's mainframe OS is heavily based on UNIX.</dd></dl>
@@ -40,23 +40,27 @@
         </section>
         <section>
             <h2>User Management in UNIX</h2>
+            <p>As with any OS, it is important to have serveral users on a device, this allows for easy management for a system.</p>
             <h3>Creating User Accounts</h3>
+            <p>Before creating a user group, you first must have infomation that will be needed to create the account</p>
+            <p>You will need:</p>
+            <ul>
+                <li>A username (also called a login name) that will be assigned to the user.</li>
+                <li>A password to assign the account (in best practice, this will be changed on first sign in).</li>
+                <li>Any groups that you will add the user to.</li>
+            </ul>
+            <p>In the FreeBSD OS, you may run <code>adduser</code> to create a user in a more interactive method. If you need anymore infomation, please run <code>man adduser</code> for more infomation.</p> 
             <h3>Managing User Groups in UNIX</h3>
+            <p>Creating groups of users is very important to system Administation.</p>
+            <p>UNIX systems make this very easy to manage. The <code>pw</code> utility allows easy management of user groups.</p>
         </section>
         <section>
-            <h2>UNIX Security</h2>
-            <h3>User Authentication</h3>
-            <h3>Protecting Files</h3>
-        </section>
-        <section>
-            <h2>Managing Files</h2>
             <h3>Managing Filesystems</h3>
-            <h3>Managing Disks</h3>
-            <h4>Adding Disks</h4>
-            <h4>Floppy Disks</h4>
-            <h4>CD-ROM Devices</h4>
-            <h3>Disaster Planning</h3>
-            <h4>Backing up Files and Filesystems</h4>
+            <p>A filesystem is a collection of files that allow a system to interact with these files.</p>
+            <p>These filesystems are accessed by special disks, such as <code>/dev/dsk/c1d1s9</code>, which would access the 9th parition on the 1st disk.</p>
+            <p>If you are familar with Linux, it uses <code>/dev/sd[l][n]</code>, where <code>[l]</code>is a letter and <code>[n]</code> is a number. This may look like <code>/dev/sda1</code>. </p>
+            <h3>Adding Disks</h3>
+            <p>UNIX makes it just as easy to mount and unmont disks. It's so easy, all you have to do is <code>mount [file_location] [mount_point]</code>.</p>
         </section>
         <section>
             <h2>Network Management</h2>
