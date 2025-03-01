@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="http://unix.guides.raspberryraccoon.com/">
+    <!--<base href="http://unix.guides.raspberryraccoon.com/">-->
     <title>An Administator's Guide to UNIX System Administation</title>
     <meta name="author" content="Raymond Carroll">
     <meta name="description" content="An Administator's Guide to UNIX System Administation">
@@ -16,7 +16,14 @@
     </header>
     <article>
         <section>
-            <h2>What is UNIX?</h2>
+            <h1>Table of contents</h1>
+            <a href="#What_is_UNIX">What is UNIX?</a> <br>
+            <a href="#Use_Management_in_UNIX">User Management in UNIX</a> <br>
+            <a href="#Managing_Filesystems">Managing Filesystems</a> <br>
+            <a href="#Network_Management">Network Management</a>
+        </section>
+        <section>
+            <h2 id="What_is_UNIX">What is UNIX?</h2>
             <p>UNIX is a multi-user computer operating system that started devlopment in 1969.</p>
             <blockquote>Did you know that UNIX was developed by Bell Systems for internal use?</blockquote>
             <h3>UNIX in today's world</h3>
@@ -34,12 +41,12 @@
             </ul>
         </section>
         <section>
-            <h2>Notes Moving Forward</h2>
+            <aside><b>Notes Moving Forward</b>
             <p>From this point forward, FreeBSD will be used in most examples, unless noted otherwise.</p>
-            <p>Download FreeBSD 14.2 Release for amd64 systems <a href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.2/">here</a>.</p>
+            <p>Download FreeBSD 14.2 Release for amd64 systems <a href="https://download.freebsd.org/releases/amd64/amd64/ISO-IMAGES/14.2/">here</a>.</p></aside>
         </section>
         <section>
-            <h2>User Management in UNIX</h2>
+            <h2 id="User_Management_in_UNIX">User Management in UNIX</h2>
             <p>As with any OS, it is important to have serveral users on a device, this allows for easy management for a system.</p>
             <h3>Creating User Accounts</h3>
             <p>Before creating a user group, you first must have infomation that will be needed to create the account</p>
@@ -55,7 +62,7 @@
             <p>UNIX systems make this very easy to manage. The <code>pw</code> utility allows easy management of user groups.</p>
         </section>
         <section>
-            <h3>Managing Filesystems</h3>
+            <h2 id="Managing_Filesystems">Managing Filesystems</h2>
             <p>A filesystem is a collection of files that allow a system to interact with these files.</p>
             <p>These filesystems are accessed by special disks, such as <code>/dev/dsk/c1d1s9</code>, which would access the 9th parition on the 1st disk.</p>
             <p>If you are familar with Linux, it uses <code>/dev/sd[l][n]</code>, where <code>[l]</code>is a letter and <code>[n]</code> is a number. This may look like <code>/dev/sda1</code>. </p>
@@ -63,17 +70,15 @@
             <p>UNIX makes it just as easy to mount and unmont disks. It's so easy, all you have to do is <code>mount [file_location] [mount_point]</code>.</p>
         </section>
         <section>
-            <h2>Network Management</h2>
+            <h2 id="Network_Management">Network Management</h2>
             <h3>Network Security</h3>
-        </section>
-        <section>
-            <h2>Playplace!</h2>
-            <p>To get some more of the tags out of the way, while the rest of everything is being worked out, I figured I would add some here</p>
-            <p>Using <kbd>Ctrl</kbd>, <kbd>Alt</kbd> and <kbd>Del</kbd> to sign into a computer should only be required if the <code>Interactive logon: Do not require CTRL+ALT+DEL</code> group policy is set to <code>Enabled</code>. If this is set to <code>Disabled</code> the user can use any key, or use the mouse to navigate to the sign in screen.</p>
         </section>
     </article>
     <footer>
-        <address></address>
+        <p></p>
+        <address>Website Administator: Raymond Carroll <br>
+        Mailing Address: 123 Example Rd. Frankfort, KY 40601 <br>
+        Email Address: WebsiteAdministator@example.com</address>
     </footer>
 </body>
 </html>
