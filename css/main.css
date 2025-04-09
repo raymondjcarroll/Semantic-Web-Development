@@ -4,4 +4,4 @@
 
 * {/* margin: 0; padding: 0; */ font-family: "Roboto", sans-serif;}
 h1 {text-align: center;}
-h1 h2 {color: aquamarine;}
+h1, h2 {color: aquamarine;}
