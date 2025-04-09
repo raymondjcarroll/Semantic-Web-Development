@@ -1,12 +1,14 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto */
 * {margin: 0; padding: 0; font-family: "Roboto", sans-serif;}
-h1 {text-align: center; color: white; background-color: blue; border-radius: 10px; padding: 10px; margin-bottom: 10px;}
-h2 {color: blue;}
-aside {background-color: lightgrey; padding-left: 10px;}
-dt {text-decoration: underline; text-transform: uppercase; font-size: 20px}
-section {padding: 10px;}
-table th, table td {padding: 5px;}
+html {font-size: 1rem;}
+h1 {text-align: center; font-size: 2em; color: white; background-color: blue; border-radius: 1em; padding: .5em; margin: .5em;}
+h2 {color: blue; font-size: 1.5em;}
+aside {background-color: lightgrey; padding-left: 1em;}
+aside strong {font-size: 1.25em;}
+dt {text-decoration: underline; text-transform: uppercase; font-size: 1.25em}
+section {padding: 1.25em;}
+table th, table td {padding: .25em;}
 table tr:first-child {background-color: black !important; color: white;}
 table tr:nth-child(odd) {background-color: lightgray;}
-aside p, aside img {padding-left: 10px;}
+aside p, aside img {padding-left: .25em;}
