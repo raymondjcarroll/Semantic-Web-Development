@@ -14,3 +14,4 @@ table tr:nth-child(odd) {background-color: lightgray;}
 aside p, aside img {padding-left: .25em;}
 li {list-style-type: circle;}
 code {font-family: monospace; background-color: lightgrey; padding: .25em;}
+a {color: black;}
