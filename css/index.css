@@ -7,7 +7,7 @@ h2 {color: blue; font-size: 1.5em;}
 aside {background-color: lightgrey; padding-left: 1em; border: .25em dashed blue;}
 aside strong {font-size: 1.25em;}
 dt {text-decoration: underline; text-transform: uppercase; font-size: 1.25em}
-section {padding: 1.25em;}
+section {padding: 1.25em; display: flex; flex-wrap: wrap; gap: .5em;}
 table th, table td {padding: .25em;}
 table tr:first-child {background-color: black !important; color: white;}
 table tr:nth-child(odd) {background-color: lightgray;}
