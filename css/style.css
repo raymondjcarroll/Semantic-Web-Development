@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Roboto */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,7 +7,7 @@
 
 html {
 	color: darkslategrey;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Roboto, sans-serif;
 }
 
 h1 {
@@ -36,7 +38,16 @@ article {
 }
 
 h2 {
-	padding: .5em .25em;
+	padding: .5em 0;
+}
+
+h3 {
+	padding: 1em 0;
+}
+
+h4 { 
+	font-weight: bolder;
+	font-size: large;
 }
 
 p {
@@ -62,8 +73,8 @@ aside {
 .card {
 	background-color: #f1f1f1;
 	border-radius: .5em;
-	max-width: 10em;
-	min-width: 10em;
+	max-width: 12em;
+	min-width: 12em;
 	padding: 1em;
 	gap: 1em;
 	margin: 1em;
@@ -87,10 +98,11 @@ aside {
 }
 
 .cardlink {
+	display: flex;
 	justify-content: center;
 }
 
-button {
+button, .button{
 	background-color: darkslategrey;
 	color: white;
 	padding: 1em;
@@ -101,7 +113,7 @@ button {
 	margin-top: .5em;
 }
 
-button:hover {
+.button:hover {
 	background-color: white;
 	color: darkslategrey;
 	transition-duration: 0.4s;
