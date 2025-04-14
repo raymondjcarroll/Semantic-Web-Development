@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2 - An Administrator's Guide to UNIX System Administration</title>
+    <title>An Administrator's Guide to UNIX System Administration</title>
     <meta name="author" content="Raymond Carroll">
     <meta name="description" content="An Administrator's Guide to UNIX System Administration">
     <meta name="keywords" content="Administrator, UNIX, System Administration">
@@ -21,26 +21,27 @@
     </nav>
     <section>
         <article>
-            <h2>User Management</h2>
+            <h2>User and Group Management</h2>
+            <h3>User Management</h3>
             <p>An important part of any OS is users. It's important to be able to restrict access to certain resources to certain people.</p>
             <p>One of the unique features of UNIX, exist in most OSes is the idea of a <i>superuser</i>. This superuser is called <i>root</i>.</p>
             <p>All accounts have a <i>username</i>, which is how you identify which user is who. All accounts must also have an <i>UID</i>. These <i>UIDs</i> must less than 65535.</p>
-            <h3>Creating a User</h3>
+            <h4>Creating a User</h4>
             <p>FreeBSD has the command <code>adduser</code> to add users to the system. While it is possible to run this command with flags, <code>adduser</code> will run interactively by running it without any flags.</p>
             <aside>
                 <h3>Note for <code>adduser</code></h3>
                 <p><code>adduser</code> must be ran as <i>superuser</i>. To do this in FreeBSD, run <code>sudo -i</code> first.</p>
             </aside>
-            <h3>Deleting a User</h3>
+            <h4>Deleting a User</h4>
             <p>FreeBSD has the command <code>rmuser</code> to remove any user. You will be prompted to confirm the deletion.</p>
-            <h2>Group Management</h2>
-            <h3>Creating a Group</h3>
+            <h3>Group Management</h3>
+            <h4>Creating a Group</h4>
             <p>FreeBSD also has the command <code>pw</code> that will allow you to create user groups. Use the flag <code>groupadd</code> to create a group.</p>
             <p>An example syntax is <code>sudo pw groupadd students</code> to create a group called 'students'.</p>
-            <h3>Adding a User to a Group</h3>
+            <h4>Adding a User to a Group</h4>
             <p>To add a user to a group, you can also use the <code>pw</code> command.</p>
             <p>An example syntax is <code>sudo pw group mod students -m raymond</code>. This will add the user 'raymond' to the 'students' group.</p>
-            <h3>Removing a User from a Group</h3>
+            <h4>Removing a User from a Group</h4>
             <p>The <code>-d</code> flag to the <code>pw</code> command allows deleting a user from a group.</p>
             <p>An example syntax is <code>sudo pw group mod students -d raymond</code> to delete the user 'raymond' from the group 'students'.</p>
         </article>
