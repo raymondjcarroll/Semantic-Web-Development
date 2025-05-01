@@ -14,13 +14,33 @@
         <h1>Introduction to UNIX System Administration</h1>
     </header>
     <nav>
-        <a href="unix_basics.html"><button>UNIX Basics</button></a>
-        <a href="user_management.html"><button>User Management</button></a>
-        <a href="file_disks_filesystem_management.html"><button>File, Disks and Filesystems</button></a>
-        <a href="printer_network_managment.html"><button>Printer & Network Management</button></a>
+        <a href="unix_basics.html" class="button">UNIX Basics</a>
+        <a href="user_management.html" class="button">User Management</a>
+        <a href="disks_filesystem_management.html" class="button">Disks and Filesystems</a>
+        <a href="printer_network_managment.html" class="button">Printer & Network Management</a>
     </nav>
     <section>
-        <h2>Page Under Development - PNM</h2>
+        <h2>Understanding Printing & Networking in UNIX</h2>
+        <article>
+            <h3>Understanding Printing in UNIX</h3>
+            <p>Like any other OS, it's often that information would want to be recorded in a physical form. This "information" can be data from a spreadsheet or text from a text document. It's not just standard printer paper that this applies to either. You may want to print on a plotter if you were making a map, or print an identification card on card printer.</p>
+            <p>The spooling system to printing is very simple, and it's not different that other operating systems.</p>
+            <p>Firstly, the user needs to indicate the print in some manner. This is normally called a <i>job</i>, but also might be called a <i>request</i>.</p>
+            <p>The second step is called a <i>queue</i>, where the print jobs are stored and queued up. This is no different than a queue to a rollercoaster. This steps also follows the model of FIFO, or First In First Out. The oldest job gets printed first.</p>
+            <p>That's pretty much printing in UNIX. There definitely to more to it, but that goes past an Introduction. You should understand <i>Administrative commands</i> which are used to manage the queues.</p>
+        </article>
+        <article>
+            <h3>Understanding Networking in UNIX</h3>
+            <p>Being able to share information between computers, or they won't serve much good.</p>
+            <p>Well, that's why computers are connected (or networked) together.</p>
+            <p>To network a computer, first you must install (or have installed) some device that is capable of networking devices. In some cases this is an ethernet card, in others this is a wireless controller. A lot of device in the modern age also have a networking controller already built in.</p>
+            <p>Another requirements would be to give your computer a <i>hostname</i>, or simply what the device will be called on the network. Most organizations name off of a scheme, which can be what ever you want. <a href="https://despicableme.fandom.com/wiki/Minions">The Minions</a> are quite fun to use as a naming scheme.</p>
+            <img src="https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/fbfbab30-db58-4d1b-9a42-1c9cf1dc9714/ccce5ac13f3210623ba1069debf1658bb8a73a07.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom" id="minion" alt="Image of three yellow minions. The one on the left is short, only has a single eye and is holding a musical instrument. The one in the center is tall with two eyes with hair that spouts from the center. The right most minion has two eyes and is shorter in posture. They also has their left hand raised showing all three figures.">
+            <aside>
+                <h4>Note</h4>
+                <p>There may be more to configuring a network than the steps above. Most modern UNIX distros (and other OSes in general) are expecting to be connected to the internet (public connection of computers) or intranet (private connection of computers) and extra configuration is not always required.</p>
+            </aside>
+        </article>
     </section>
     <footer>
         <p>Website Administrator: <i>Raymond Carroll</i></p>

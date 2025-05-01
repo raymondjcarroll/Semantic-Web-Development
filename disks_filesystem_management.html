@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Administrator's Guide to UNIX System Administration</title>
+    <meta name="author" content="Raymond Carroll">
+    <meta name="description" content="An Administrator's Guide to UNIX System Administration">
+    <meta name="keywords" content="Administrator, UNIX, System Administration">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Introduction to UNIX System Administration</h1>
+    </header>
+    <nav>
+        <a href="unix_basics.html" class="button">UNIX Basics</a>
+        <a href="user_management.html" class="button">User Management</a>
+        <a href="disks_filesystem_management.html" class="button">Disks and Filesystems</a>
+        <a href="printer_network_managment.html" class="button">Printer & Network Management</a>
+    </nav>
+    <section>
+        <h2>Disk & Filesystem Management</h2>
+        <article>
+            <h3>Goals of Disks and Filesystems</h3>
+            <p>It's important to be able to save work that is done within a system. That's the value of a file, and it can save anything imaginable. Part of system administration is:</p>
+            <ul>
+                <li>Keeping up with these files</li>
+                <li>Making these files accessible</li>
+                <li>Keeping these files as secure a possible, and maintaining as little access as possible</li>
+            </ul>
+        </article>
+        <article>
+            <h3>What is a Filesystem?</h3>
+            <p>A file system is a collection of files that are organized together. A file system is not too different than a filling cabinet.</p>
+            <p>In UNIX, filesystems are partitions of a disk that can get mounted to look as it's a folder in another filesystem.</p>
+            <p>For example, the folder <code>gru</code> can be a folder in the root directory and have the sub-folders <code>kevin</code> and <code>stewart</code>. <code>kevin</code> and <code>stewart</code> can be on different disks that <code>gru</code> and than each other.</p>
+        </article>
+    </section>
+    <footer>
+        <p>Website Administrator: <i>Raymond Carroll</i></p>
+        <p>Contact: <i><a href="mailto:rjca248@uky.edu"></a>rjca248@uky.edu</i></p>
+        <p><a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" /></a></p>
+    </footer>
+</body>
+</html>
