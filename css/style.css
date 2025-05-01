@@ -54,6 +54,10 @@ p {
 	padding: .25em;
 }
 
+a {
+	color: white;
+}
+
 aside {
 	background-color: lightgrey;
 	border-left: .25em solid darkslategrey;
